@@ -1,26 +1,14 @@
-# Lecture Notes Series — Volumes I–IV
+# Mathematics Course Notes
 
-Self-contained lecture notes in theoretical physics, written as a single
-progression: from the harmonic oscillator to quantum mechanics.
+Written in a rigorous, Axler-inspired style: full proofs and complete
+derivations rather than formula sheets, with theorems, definitions, examples,
+and remarks set in structured environments throughout.
 
-## Contents
-- `lecture_notes_volumes_I-IV.pdf` — combined volume (221 pp), Parts I–IV with
-  unified front matter; per-part numbering matches each standalone document exactly.
-- `osc/`   Part I   — Oscillators: From One Spring to the Wave Equation (`ho_reference.tex/.pdf`, 40 pp)
-- `mech/`  Part II  — Variational and Hamiltonian Mechanics (`variational_mechanics_course.tex/.pdf`, 54 pp)
-- `fld/`   Part III — Special Relativity and Classical Field Theory (`relativity_field_theory.tex/.pdf`, 65 pp)
-- `qm/`    Part IV  — Quantum Mechanics (`quantum_mechanics.tex/.pdf`, 63 pp)
-- `volume/` build system: `bash build.sh` regenerates the combined volume
-  (`build/master.pdf`) from the standalone sources without modifying them.
+| Course | Notes | Coverage |
+|---|---|---|
+| MATH 451 — Real Analysis (`math451-real-analysis/`) | 170 pp | Construction of ℕ, ℚ, ℝ and the completeness axiom; sequences, series, and limit theorems; basic topology of metric spaces |
+| MATH 452 — Multivariable Analysis (`math452-multivariable-analysis/`) | 186 pp | Sequences and continuity in ℝⁿ; differentiability, the differential, and Taylor's theorem; Implicit and Inverse Function Theorems; Lagrange multipliers; gradient, curl, divergence; multiple integrals and the classical integral theorems |
+| MATH 551 — Measure Theory (`math551-measure-theory/`) | 151 pp | Countability and the Cantor–Bernstein theorem; topology of ℝ and Heine–Borel; Lebesgue outer measure, measurable sets and functions; Egorov's and Lusin's theorems; the Lebesgue integral |
+| MATH 590 — Topology (`math590-general-topology/`) | 179 pp | Point-set topology from the axioms: bases, order/product/subspace/quotient topologies; Hausdorff spaces and continuity; metric topology; connectedness |
 
-## Building
-Each part compiles standalone with `pdflatex <file>.tex` (twice) in its own
-directory. Figures (`fig_*.pdf`) sit alongside the sources with generator
-scripts (`make_figures_*.py`) where applicable.
-
-The combined volume namespaces all labels, preserves each Part's internal
-numbering, and validates every cross-Part citation (`check_crossrefs.py`)
-before building — see `volume/README_volume.md` for design notes.
-
-Further Parts (quantum field theory, general relativity) are planned; the
-build registry accepts a new Part as a single entry.
+Each course folder contains the LaTeX source and the compiled PDF.
