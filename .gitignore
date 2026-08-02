@@ -1,0 +1,18 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+# combined-volume build directory (regenerate with volume/build.sh)
+physics/series/volume/build/
+# Python
+__pycache__/
+*.pyc
